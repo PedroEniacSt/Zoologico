@@ -8,15 +8,8 @@ public:
     int quantidade;
     float peso;
 };
-animal a;
 
-void functionCalc() {
-
-    cout << a.comida * a.quantidade / 30;
-
-}
-
-bool animalIsValid = true;
+bool animalIsValid;
 
 int main() {
     animal a;
@@ -25,30 +18,19 @@ int main() {
 
     cout << "animal: ";
     cin >> nome;
-    do {
-        if (animalIsValid == false) {
-            cout << "please enter a valid animal: ";
-            cin >> nome;
-        } 
-        if (nome == "leopardo") {
-            a.comida = 30;
-            a.quantidade = 5;
-            cout << 444;
+    animalIsValid = false;
+    do{
+         if (nome == "leopardo"){
+             animalIsValid = true;
+             cout << "bimbimbambam";
 
-        } if (nome == "macaco") {
-            a.comida = 30;
-            a.quantidade = 5;
-            a.peso = 15;
-            cout << &functionCalc;
-            return 0;
+            } else {
+                cout << "please enter a animal valid: ";
+                cin >> nome;
         }
-
-    }
-    while (!animalIsValid);
+    } 
 
 
 
-
-
-    return 0;
+    while(animalIsValid == false);
 }
