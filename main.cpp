@@ -62,7 +62,7 @@ int main() {
                 int x = a.comida / a.quantidade;
                 const int y = a.comida * a.kilo / 30;
                 int calc = a.comida / a.quantidade * a.price;
-                cout << "Animal: Leopardo" << endl;
+                cout << "Animal: Macaco" << endl;
                 cout << "Quantity of Food per Animal: 5" << endl;
                 cout << "Quantity of Food per Day: " << x << endl;
                 cout << "Quantity of Food per Month: " << y << endl;
@@ -80,7 +80,7 @@ int main() {
                 int x = a.comida / a.quantidade;
                 const int y = a.comida * a.kilo / 30;
                 int calc = a.comida / a.quantidade * a.price;
-                cout << "Animal: Leopardo" << endl;
+                cout << "Animal: Jabuti" << endl;
                 cout << "Quantity of Food per Animal: 5" << endl;
                 cout << "Quantity of Food per Day: " << x << endl;
                 cout << "Quantity of Food per Month: " << y << endl;
@@ -97,7 +97,7 @@ int main() {
             if (verify == "Y" || verify == "y"){
                 repeat = true;
                 break;
-            }
+            } 
         }
 
 
